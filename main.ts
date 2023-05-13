@@ -1,9 +1,16 @@
-let hora = 4
-let minutos = 15
+let hora = 5
+let minutos = 28
 loops.everyInterval(60000, function () {
     minutos += 1
 })
 basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showNumber(hora)
+    }
+    if (input.buttonIsPressed(Button.B)) {
+        basic.showNumber(minutos)
+    }
+    basic.clearScreen()
     if (minutos == 0) {
     	
     } else if (minutos == 1) {
@@ -111,9 +118,178 @@ basic.forever(function () {
         led.plot(3, 1)
         led.plot(3, 2)
         led.plot(3, 3)
-    } else if (false) {
-    	
+    } else if (minutos == 31) {
+        led.plot(4, 0)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 32) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+    } else if (minutos == 33) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 4)
+    } else if (minutos == 34) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 3)
+    } else if (minutos == 35) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 36) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 2)
+    } else if (minutos == 37) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 2)
+        led.plot(3, 4)
+    } else if (minutos == 38) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 2)
+        led.plot(3, 3)
+    } else if (minutos == 39) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 40) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+    } else if (minutos == 41) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 4)
+    } else if (minutos == 42) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 3)
+    } else if (minutos == 43) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 44) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 2)
+    } else if (minutos == 45) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 4)
+    } else if (minutos == 46) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 3)
+    } else if (minutos == 47) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 48) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+    } else if (minutos == 49) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 4)
+    } else if (minutos == 50) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 3)
+    } else if (minutos == 51) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 52) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 2)
+    } else if (minutos == 53) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 4)
+    } else if (minutos == 54) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 3)
+    } else if (minutos == 55) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
+    } else if (minutos == 56) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(4, 2)
+        led.plot(3, 2)
+    } else if (minutos == 57) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(4, 2)
+        led.plot(3, 2)
+        led.plot(3, 4)
+    } else if (minutos == 58) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(4, 2)
+        led.plot(3, 2)
+        led.plot(3, 3)
+    } else if (minutos == 59) {
+        led.plot(4, 0)
+        led.plot(3, 0)
+        led.plot(4, 1)
+        led.plot(3, 1)
+        led.plot(4, 2)
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
     } else {
+        basic.clearScreen()
         minutos = 0
         hora += 1
     }
@@ -154,6 +330,7 @@ basic.forever(function () {
         led.plot(1, 1)
         led.plot(0, 2)
     } else {
+        basic.clearScreen()
         hora = 1
     }
 })
