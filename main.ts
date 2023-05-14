@@ -1,5 +1,5 @@
-let hora = 5
-let minutos = 28
+let hora = 6
+let minutos = 5
 loops.everyInterval(60000, function () {
     minutos += 1
 })
@@ -293,8 +293,8 @@ basic.forever(function () {
         minutos = 0
         hora += 1
     }
-    led.plot(2, 1)
-    led.plot(2, 3)
+    led.plotBrightness(2, 1, 40)
+    led.plotBrightness(2, 3, 40)
     if (hora == 1) {
         led.plot(1, 4)
     } else if (hora == 2) {
