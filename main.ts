@@ -1,5 +1,5 @@
-let hora = 6
-let minutos = 5
+let hora = 11
+let minutos = 3
 loops.everyInterval(60000, function () {
     minutos += 1
 })
